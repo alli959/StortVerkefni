@@ -48,8 +48,16 @@ main {
     .col-sm-12 {
       width: 100%; } }
 
+.navbar{
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+}
+
 .header {
-  height: 15em;
+  height: 20em;
   background:  url(bg-subpage.jpg) no-repeat fixed;
   background-size: cover;
   background-position: 50% 50%;
@@ -58,22 +66,64 @@ main {
   font-family: 'Roboto Slab', serif;
   font-size: 2em;
 }
+
+
   .heading--one {
+    word-break: break-word;
+    font-family: 'Roboto Slab', serif;
     display: flex;
     max-width: 1200px;
-    min-height: 5em;
+    min-height: 10em;
     margin: 0 auto;
     align-items: center;
-    color: white;
 
-    font-size: 3em;
+   
+    font-size: 2em;
+    color: white;
    }
   .heading--two {
-    font-size: 2em;
-   }
+    font-family: 'Roboto Slab', serif;
+    margin-top: 5em;
+    font-size: 1.6em;
+ }
+ @media (max-width: 400px) {
+   .heading--two {
+     margin-top: 2em; } }
+
   .heading--three {
+    font-family: 'Roboto Slab', serif;
     font-size: 1em;
   }
+
+  .text__p {
+  margin-bottom: 20px;
+  }
+
+  .text__b {
+    display: block;
+    float: right;
+    font-size: 1.5em;
+    font-style: italic;
+    line-height: 1.5;
+    margin-left: 5em;
+    margin-right: 1em;
+    margin-bottom: 2em;
+    margin-top: 1em;
+      }
+
+    @media (max-width: 400px) {
+        .text__b {
+          margin-left: 0.5em;
+          margin-right:0.5em;
+          float: none; } }
+
+
+  .author {
+    margin-top: 2em;
+    font-style: normal;
+   font-size: 1rem;
+  }
+
 
 .button {
   display: inline-block;

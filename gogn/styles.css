@@ -49,7 +49,7 @@ main {
       width: 100%; } }
 
 .header {
-  height: 15em;
+  height: 20em;
   background:  url(bg-subpage.jpg) no-repeat fixed;
   background-size: cover;
   background-position: 50% 50%;
@@ -58,14 +58,16 @@ main {
   font-family: 'Roboto Slab', serif;
   font-size: 2em;
 }
+
+
   .heading--one {
     display: flex;
     max-width: 1200px;
-    min-height: 5em;
+    min-height: 10em;
     margin: 0 auto;
     align-items: center;
-
-    font-size: 3em;
+    font-size: 2em;
+    color: white;
    }
   .heading--two {
     font-size: 2em;

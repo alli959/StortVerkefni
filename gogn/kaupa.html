@@ -24,19 +24,19 @@
       <div class = "pers">
         <h3 class = "pers_information">Persónuupplýsingar</h3>
         <div class = "name">
-          <legend>Nafn:</legend>
-          <input type="name" name="name" id="name" required>
+          <p class = "hlutur">Nafn:</p>
+          <input type="text" name="nafn" required>
         </div>
 
 
         <div class = "kennitala">
-          <legend>Kennitala:</legend>
-          <input type="text" pattern ="[0-9]{6}-[0-9]{4}"  id="text" required
+          <p class = "hlutur">Kennitala:</p>
+          <input type="text" pattern ="[0-9]{6}-[0-9]{4}"
           required autofocus placeholder="123456-7890">
         </div>
 
         <div class = "kyn">
-          <Legend>Kyn:</legend>
+          <p class = "hlutur">Kyn:</p>
             <label>
               <input name="gender" type="radio" value="male">
               Karl
@@ -52,13 +52,14 @@
           </div>
 
           <div class = "phone">
-            <legend>Sími:</legend>
-            <input name="number" type="number" value="number"
-            required autofocus placeholder="+354 812 3456">
+            <p class = "hlutur">Sími:</p>
+            <input name="telephone" type="tel"
+            required placeholder="+354 812 3456">
           </div>
+
           <div class = "address">
-            <legend>Heimilisfang:</legend>
-            <input type="name" name="name" id="name" required>
+            <p class = "hlutur">Heimilisfang:</p>
+            <input type="text" name="heimilisfang"  required>
           </div>
 
           <div class = "postlist">
@@ -66,30 +67,76 @@
             Skrá mig á póstlista
           </div>
         </div>
-        <div class = "Grei">
+
+        <div class = "Greitt">
           <h3 class = "payment">Greiðsluupplýsingar</h3>
-          
+          <div class = "typeofpayment">
+            <p class = "hlutur"> Greiða með:</p>
+            <select>
+              <option value="Kredid">Kreditkorti</option>
+              <option value="transpose">Millifærslu</option>
+              <option value="cash">Reiðufé</option>
+            </select>
+          </div>
+
+          <div class = "cardname">
+            <p class = "hlutur">Nafn á korti:</p>
+            <input type="text" name="cardname" required>
+          </div>
+          <div class = "cardnumber">
+            <p class = "hlutur">Kortanúmer:</p>
+            <input name = "cardnumber" type ="number"
+            required placeholder="5999-9999-9999-9999">
+          </div>
+
+          <div class = "expdate">
+            <div class = "month">
+            <p class = "hlutur">Gildistími:</p>
+              Mán
+              <select>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+            </div>
+            <div class = "year">
+              Ár
+              <select>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <button class = "panta">Panta</button>
+      </div>
+      <div class = "information">
+        <div class = "information_left">
+          <p class = "information_foo">Fooþjónusta</p>
+          <p class = "information_number">123-4567</p>
+        </div>
+        <div class = "information_right">
+          <p class = "information_open">Opið 12-13 alla daga</p>
+          <p class = "information_place">Bargata 1</p>
+          <p class = "information_foobar">900 Foobar</p>
+        </div>
+      </div>
 
 
+      <div class = "bottom">
 
+      <p class = "bottom_foobar">Fooþjónustan 2017</p>
+    </div>
 
-Greiðsluupplýsingar
-Greiða með:
-
-Nafn á korti:
-
-Kortanúmer:
-
-5999-9999-9999-9999
-Gildistími:
-Mán
-
-Ár
-
-Panta
-Fooþjónustan
-123-4567
-Opið 12-13 alla daga
-Bargata 1
-900 Foobar
-© Fooþjónustan 2017
+  </body>

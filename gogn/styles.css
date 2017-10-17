@@ -48,13 +48,59 @@ main {
     .col-sm-12 {
       width: 100%; } }
 
-.navbar{
-  max-width: 1200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1em;
+.logo{
+  height: 1.5em;
+  max-width: 100%;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+ top:0; left:0;
+ width: 100%;
 }
+
+.navbar{
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 1em;
+  margin-top: 4px;
+}
+
+.um {
+  font-size: 18px;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: 1em;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.index {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.kaupabutton {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 3.7em;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: solid 1px #666;
+  border-radius: 4px;
+  background-color: #999;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+}
+
+
 
 .header {
   height: 20em;

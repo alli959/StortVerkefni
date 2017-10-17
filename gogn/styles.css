@@ -15,7 +15,7 @@ html {
   /* stylelint-disable-line */
   margin-right: 20px;
   margin-left: 20px;
-  font-family: Lato, helvetica, arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5; }
   @media (min-width: 1200px) {
@@ -48,18 +48,31 @@ main {
     .col-sm-12 {
       width: 100%; } }
 
-.heading {
+.header {
+  height: 15em;
+  background:  url(bg-subpage.jpg) no-repeat fixed;
+  background-size: cover;
+  background-position: 50% 50%;
   width: 100%;
-  padding: 0;
   border: none;
-  font-family: Merriweather, georgia, serif;
-  font-size: 2rem; }
+  font-family: 'Roboto Slab', serif;
+  font-size: 2em;
+}
   .heading--one {
-    font-size: 3rem; }
+    display: flex;
+    max-width: 1200px;
+    min-height: 5em;
+    margin: 0 auto;
+    align-items: center;
+
+    font-size: 3em;
+   }
   .heading--two {
-    font-size: 2rem; }
+    font-size: 2em;
+   }
   .heading--three {
-    font-size: 1rem; }
+    font-size: 1em;
+  }
 
 .button {
   display: inline-block;

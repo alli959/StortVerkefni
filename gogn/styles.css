@@ -77,7 +77,7 @@ main {
     margin: 0 auto;
     align-items: center;
 
-   
+
     font-size: 2em;
     color: white;
    }
@@ -156,6 +156,33 @@ main {
     border-color: #eee;
     color: #999;
     background-color: #eee; }
+
+    .buying{
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+    input[name=nafn] {
+  width: 300px;
+  }
+
+  input[name = gender]{
+    text-align: left;
+  }
+
+
+  .typeofpayment nafn{
+    width: 300px;
+  }
+
+  .hlutur{
+    margin-top: 10px;
+  }
+
+  .gildistimi{
+    display: run-in;
+  }
 
 .card {
   width: 100%;

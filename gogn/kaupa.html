@@ -5,6 +5,7 @@
     <title>Kaupa</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
   </head>
   <body>
     <div class ="navbar">
@@ -13,130 +14,137 @@
       <a href="kaupa.html">Kaupa</a>
     </div>
 
-    <div class = "front">
-      <div class = "front_image">
-        <img src="bg-subpage.jpg" alt="" class="front_image">
-      </div>
-      <h1 class="kaupa">Kaupa</h1>
-    </div>
-
-    <div class = "information">
-      <div class = "pers">
-        <h3 class = "pers_information">Persónuupplýsingar</h3>
-        <div class = "name">
-          <p class = "hlutur">Nafn:</p>
-          <input type="text" name="nafn" required>
-        </div>
-
-
-        <div class = "kennitala">
-          <p class = "hlutur">Kennitala:</p>
-          <input type="text" pattern ="[0-9]{6}-[0-9]{4}"
-          required autofocus placeholder="123456-7890">
-        </div>
-
-        <div class = "kyn">
-          <p class = "hlutur">Kyn:</p>
-            <label>
-              <input name="gender" type="radio" value="male">
-              Karl
-            </label>
-            <label>
-              <input name="gender" type="radio" value="female">
-              Kona
-            </label>
-            <label>
-              <input name="gender" type="radio" value="other">
-              Annað
-            </label>
+    <header class = "header">
+      <div>
+       <h1 class="heading heading--one">Kaupa</h1>
+     </div>
+   </header>
+   <main>
+      <div class = "row">
+        <div class = "buying">
+          <div class = "grid">
+          <h3 class = "heading--three">Persónuupplýsingar</h3>
+          <div class = "name">
+            <p class = "hlutur">Nafn:</p>
+            <input type="text" name="nafn" required>
           </div>
 
-          <div class = "phone">
-            <p class = "hlutur">Sími:</p>
-            <input name="telephone" type="tel"
-            required placeholder="+354 812 3456">
+
+
+          <div class = "kennitala">
+            <p class = "hlutur">Kennitala:</p>
+            <input type="text" name="nafn" pattern ="[0-9]{6}-[0-9]{4}"
+            required autofocus placeholder="123456-7890">
           </div>
 
-          <div class = "address">
-            <p class = "hlutur">Heimilisfang:</p>
-            <input type="text" name="heimilisfang"  required>
-          </div>
-
-          <div class = "postlist">
-            <input type="checkbox" name="checkbox">
-            Skrá mig á póstlista
-          </div>
-        </div>
-
-        <div class = "Greitt">
-          <h3 class = "payment">Greiðsluupplýsingar</h3>
-          <div class = "typeofpayment">
-            <p class = "hlutur"> Greiða með:</p>
-            <select>
-              <option value="Kredid">Kreditkorti</option>
-              <option value="transpose">Millifærslu</option>
-              <option value="cash">Reiðufé</option>
-            </select>
-          </div>
-
-          <div class = "cardname">
-            <p class = "hlutur">Nafn á korti:</p>
-            <input type="text" name="cardname" required>
-          </div>
-          <div class = "cardnumber">
-            <p class = "hlutur">Kortanúmer:</p>
-            <input name = "cardnumber" type ="number"
-            required placeholder="5999-9999-9999-9999">
-          </div>
-
-          <div class = "expdate">
-            <div class = "month">
-            <p class = "hlutur">Gildistími:</p>
-              Mán
-              <select>
-                <option value="01">01</option>
-                <option value="02">02</option>
-                <option value="03">03</option>
-                <option value="04">04</option>
-                <option value="05">05</option>
-                <option value="06">06</option>
-                <option value="07">07</option>
-                <option value="08">08</option>
-                <option value="09">09</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-              </select>
+          <div class = "kyn">
+            <p class = "hlutur">Kyn:</p>
+              <label>
+                <input name="gender" type="radio" value="male">
+                Karl
+              </label>
+              <label>
+                <input name="gender" type="radio" value="female">
+                Kona
+              </label>
+              <label>
+                <input name="gender" type="radio" value="other">
+                Annað
+              </label>
             </div>
-            <div class = "year">
-              Ár
-              <select>
-                <option value="2017">2017</option>
-                <option value="2018">2018</option>
-                <option value="2019">2019</option>
-                <option value="2020">2020</option>
-              </select>
+
+            <div class = "phone">
+              <p class = "hlutur">Sími:</p>
+              <input name="nafn" type="tel"
+              required placeholder="+354 812 3456">
+            </div>
+
+            <div class = "address">
+              <p class = "hlutur">Heimilisfang:</p>
+              <input type="text" name="nafn"  required>
+            </div>
+
+            <div class = "postlist">
+              <input type="checkbox" name="checkbox">
+              Skrá mig á póstlista
             </div>
           </div>
         </div>
-        <button class = "panta">Panta</button>
-      </div>
-      <div class = "information">
-        <div class = "information_left">
-          <p class = "information_foo">Fooþjónusta</p>
-          <p class = "information_number">123-4567</p>
+        <div class = "buying">
+
+
+          <div class = "grid">
+
+            <h3 class = "heading--three">Greiðsluupplýsingar</h3>
+            <div class = "typeofpayment">
+              <p class = "hlutur"> Greiða með:</p>
+              <select name="nafn">
+                <option value="Kredid">Kreditkorti</option>
+                <option value="transpose">Millifærslu</option>
+                <option value="cash">Reiðufé</option>
+              </select>
+            </div>
+
+            <div class = "cardname">
+              <p class = "hlutur">Nafn á korti:</p>
+              <input type="text" name="nafn" required>
+            </div>
+            <div class = "cardnumber">
+              <p class = "hlutur">Kortanúmer:</p>
+              <input name = "nafn" type ="number"
+              required placeholder="5999-9999-9999-9999">
+            </div>
+
+            <div class = "expdate">
+              <div class = "month">
+              <p class = "hlutur">Gildistími:</p>
+                Mán
+                <select>
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <div class = "year">
+                Ár
+                <select>
+                  <option value="2017">2017</option>
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class = "information_right">
-          <p class = "information_open">Opið 12-13 alla daga</p>
-          <p class = "information_place">Bargata 1</p>
-          <p class = "information_foobar">900 Foobar</p>
-        </div>
       </div>
+          <button class = "panta">Panta</button>
+        <div class = "information">
+          <div class = "information_left">
+            <p class = "information_foo">Fooþjónusta</p>
+            <p class = "information_number">123-4567</p>
+          </div>
+          <div class = "information_right">
+            <p class = "information_open">Opið 12-13 alla daga</p>
+            <p class = "information_place">Bargata 1</p>
+            <p class = "information_foobar">900 Foobar</p>
+          </div>
+        </div>
 
 
-      <div class = "bottom">
+        <div class = "bottom">
 
-      <p class = "bottom_foobar">Fooþjónustan 2017</p>
-    </div>
-
+        <p class = "bottom_foobar">Fooþjónustan 2017</p>
+      </div>
+    </main>
   </body>
+</html>

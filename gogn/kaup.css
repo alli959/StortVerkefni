@@ -22,6 +22,26 @@ html {
     html {
       margin: 0; } }
 
+
+.navbar{
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 1em;
+  margin-top: 4px;
+}
+
+.logo{
+  height: 1.5em;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+ top:0; left:0;
+ width: 100%;
+}
+
 img {
   /* stylelint-disable-line */
   max-width: 100%; }
@@ -97,6 +117,25 @@ main {
   color: white;
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
+  margin-left: 10em;
+}
+
+.panta{
+  margin-left: 26em;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 14em;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: solid 1px #666;
+  border-radius: 4px;
+  background-color: #999;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+
 }
 
 

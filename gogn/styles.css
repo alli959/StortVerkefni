@@ -49,8 +49,7 @@ main {
       width: 100%; } }
 
 .logo{
-  height: 1.5em;
-  background-color: black;
+  max-height: 1.5em;
   background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
  top:0; left:0;
@@ -99,7 +98,28 @@ main {
   text-decoration: none;
 }
 
+@media (max-width: 399px) {
+  .kaupabutton {
+    display: none;
+visibility: hidden;
+     } }
 
+.panta{
+  margin-left: 26em;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 14em;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: solid 1px #666;
+  border-radius: 4px;
+  background-color: #999;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+}
 
 .header {
   height: 20em;
@@ -124,11 +144,13 @@ main {
     font-size: 2em;
     color: white;
    }
+
   .heading--two {
     font-family: 'Roboto Slab', serif;
     margin-top: 5em;
     font-size: 1.6em;
  }
+
  @media (max-width: 400px) {
    .heading--two {
      margin-top: 2em; } }
@@ -154,6 +176,14 @@ main {
     margin-top: 1em;
       }
 
+  @media (max-width: 599px) {
+      .text__b {
+        margin-left: 2.5em;
+        margin-right: 0.5em;
+        width: 260px;
+        float: right;
+         }}
+
     @media (max-width: 400px) {
         .text__b {
           margin-left: 0.5em;
@@ -161,10 +191,76 @@ main {
           float: none; } }
 
 
+
   .author {
     margin-top: 2em;
     font-style: normal;
    font-size: 1rem;
+  }
+
+
+.buying {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+      }
+
+       input[name=nafn] {
+     width: 300px;
+     }
+
+     input[name = gender]{
+       text-align: left;
+     }
+
+
+     .typeofpayment nafn{
+       width: 300px;
+     }
+
+     .hlutur{
+      margin-top: 10px;
+     }
+
+     .gildistimi{
+       display: run-in;
+     }
+
+  .back{
+    background-size: cover;
+    background-color: rgb(64, 64, 64);
+    width: 100%;
+    border: none;
+    margin-top: 5rem;
+  }
+
+  .width{
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+  }
+
+  .footer2{
+    max-width: 1200px;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: center;
+    margin:0 auto;
+    text-align: center;
+    color: grey;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
 

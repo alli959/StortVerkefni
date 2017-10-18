@@ -101,7 +101,7 @@ main {
 @media (max-width: 399px) {
   .kaupabutton {
     display: none;
-visibility: hidden;
+    visibility: hidden;
      } }
 
 .panta{

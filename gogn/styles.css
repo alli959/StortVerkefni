@@ -101,6 +101,10 @@ main {
   text-decoration: none;
 }
 
+.kaupabutton:hover{
+  background-color: rgb(51, 51, 51);
+}
+
 @media (max-width: 399px) {
   .kaupabutton {
     display: none;
@@ -122,6 +126,11 @@ main {
   color: white;
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.panta:hover{
+  background-color: rgb(51, 51, 51);
 }
 
 .header {
@@ -195,6 +204,10 @@ main {
   text-decoration: none;
   cursor: pointer;
   animation: fadein 6s;
+}
+
+.kaupa:hover{
+  background-color: rgb(51, 51, 51);
 }
 
 
@@ -303,6 +316,10 @@ main {
    cursor: pointer;
 }
 
+.kaupa2:hover{
+  background-color: rgb(51, 51, 51);
+}
+
 
 
   .heading--one {
@@ -387,7 +404,6 @@ main {
      }
 
      .payment{
-
        margin-left: 10px;
        max-width: 1000px;
        margin-top: 5em;

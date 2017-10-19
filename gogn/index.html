@@ -5,37 +5,46 @@
     <title>StortVerkefni</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
   </head>
+
   <body>
-    <div class="navbar">
+    <header class="mainheader">
+      <div class="logo">
+       <div class="navbar">
+        <a class="index" href="index.html">Fooþjónustan</a>
+        <a class="um" href="um.html">Um</a>
+        <a class="kaupabutton" href="kaupa.html">Kaupa</a>
+       </div>
+      </div>
+      <div class = "front">
+       <h1 class="heading heading--main1">Í fyrsta skipti á Íslandi</h1>
+       <h2 class="heading heading--main2">Fooþjónustan</h2>
+       <button class = "kaupa" >Kaupa</button>
+      </div>
+    </header>
 
-      <a href="index.html">Fooþjónusta</a>
-      <a href="um.html">Um</a>
-      <a href="kaupa">Kaupa</a>
+   <main>
+    <div class="card card--wide">
+      <div class="card__image">
+        <img src="image.jpg" alt="" class="card__img">
+      </div>
+      <div class="card__content">
+        <div class="card__mid">
+         <h3 class="card__heading"><img class="check" src="check.svg" alt="Check">Ódýr og góð þjónusta</h3>
+         <p class="card__text">Gerir nákvæmlega það sem þú býst við. Ekki láta þessa frábæru nýjung framhjá þér fara.</p>
+        </div>
+        <div class="card__mid">
+         <h3 class="card__heading"><img class="check" src="check.svg" alt="Check">Þægilegt í amstri dagsins</h3>
+         <p class="card__text">Eftir nokkra daga munt þú aldrei geta verið án Fooþjónustunnar.</p>
+        </div>
+        <div class="card__mid">
+         <h3 class="card__heading"><img class="check" src="check.svg" alt="Check">Nauðsynlegt á hvert heimili</h3>
+         <p class="card__text">Hvort sem er fyrir einstaklinga eða stórfjölskyldur.</p>
+       </div>
+      </div>
     </div>
 
-    <div class="front">
-      <div class ="front_image">
-        <img src="bg.jpg" alt="" class="front_image">
-      </div>
-    <h2 class = "header1">Í fyrsta skipti á Íslandi</h2>
-    <h1 class = "header2">Foobarþjónusta</h1>
-    <button class = "kaupa">Kaupa</button>
-  </div>
-
-    <div class = "checkers">
-      <div class = "checkers_image">
-        <img src="image.jpg" alt="" class="checkers_image">
-      </div>
-      <div class = "checkers_points">
-        <h2 class = "checkers_header">Ódýr og góð þjónusta</h2>
-        <p class = "checkers_paragraph">Gerir nákvæmlega það sem þú býst við. Ekki láta þessa frábæru nýjung framhjá þér fara.</p>
-        <h2 class = "checkers_header">Þægilegt í amstri dagsins</h2>
-        <p class = "checkers_paragraph">Eftir nokkra daga munt þú aldrei geta verið án Fooþjónustunnar.</p>
-        <h2 class = "checkers_header">Nauðsynlegt á hvert heimili</h2>
-        <p class = "checkers_paragraph">Hvort sem er fyrir einstaklinga eða stórfjölskyldur.</p>
-      </div>
-    </div>
 
     <div class = "comments">
       <div class = "profile1">
@@ -72,30 +81,35 @@
       </div>
     </div>
 
-
-
-    <div class = "back">
+    <div class = "back2">
       <h3 class = "back_message"> Eftir hverju ert þú að bíða?</h3>
-      <button class = "kaupa">Kaupa</button>
+      <button class = "kaupa2">Kaupa</button>
     </div>
+   </main>
 
+    <div class="back">
+     <div class="width">
+        <div class="footer">
+          <div>
+            <div class="col col-12">
+         <p class="foot1"> Fooþjónustan </p>
+         <p class="foot3">123-4567</p>
+       </div>
+     </div>
+       <div class="footer">
+         <div>
+         <p class="foot2">Opið 12-13 alla daga</p>
+         <p class="foot4"> Bargata 1 </p>
+         <p class="foot5">900 Foobar</p>
+       </div>
+     </div>
+   </div>
+ </div>
 
-    <div class = "information">
-      <div class = "information_left">
-        <p class = "information_foo">Fooþjónusta</p>
-        <p class = "information_number">123-4567</p>
-      </div>
-      <div class = "information_right">
-        <p class = "information_open">Opið 12-13 alla daga</p>
-        <p class = "information_place">Bargata 1</p>
-        <p class = "information_foobar">900 Foobar</p>
-      </div>
+   <footer class="footer2">
+     <div class="col col-12">
+      <p class="foot">© Fooþjónustan 2017</p>
     </div>
-
-
-    <div class = "bottom">
-
-    <p class = "bottom_foobar">Fooþjónustan 2017</p>
+   </footer>
   </div>
-
-  </body>
+</body>

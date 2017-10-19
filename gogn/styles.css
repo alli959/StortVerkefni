@@ -108,7 +108,7 @@ main {
      } }
 
 .panta{
-  margin-left: 26em;
+  margin:0 auto;
   text-align: center;
   font-size: 18px;
   padding-top: 5px;
@@ -207,6 +207,11 @@ main {
   max-width: 320px;
 }
 
+.date{
+  display: inline-block;
+  margin-bottom: 2.5rem;
+}
+
 
 .comments_header{
   font-size: 21px;
@@ -246,6 +251,7 @@ main {
   cursor: pointer;
   margin-top: 1em;
 }
+
 
 
   .heading--one {
@@ -327,6 +333,22 @@ main {
      input[name = gender]{
        text-align: left;
      }
+     input[type = radio]{
+       margin-right: 10px;
+     }
+
+     .payment{
+
+       margin-left: 10px;
+       max-width: 1000px;
+       margin-top: 5em;
+     }
+
+     input[type = checkbox]{
+       margin-bottom: 2.5rem;
+     }
+
+
 
 
      .typeofpayment nafn{
@@ -454,3 +476,10 @@ main {
     display: inline-block;
     width: 24px;
         }
+
+
+
+    label{
+      display: block;
+      margin-bottom: 10px;
+    }

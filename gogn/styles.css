@@ -133,6 +133,7 @@ main {
   font-size: 2em;
 }
 
+
 .mainheader {
   height: 20em;
   background:  url(bg.jpg) no-repeat fixed;
@@ -149,11 +150,21 @@ main {
   margin-bottom: 6em;
 }
 
+@media (max-width: 400px) {
+  .mainheader {
+    background-position: 5% 0%;
+    background-size: auto;
+    margin-bottom: 3em;} }
+
 .heading--main1{
  font-weight: normal;
  font-size: 36px;
  animation: fadein 2s;
 }
+
+@media (max-width: 400px) {
+  .heading--main1 {
+    font-size: 21px;} }
 
 .heading--main2{
   font-size: 72px;
@@ -161,14 +172,18 @@ main {
   animation: fadein 4s;
 }
 
+@media (max-width: 400px) {
+  .heading--main2 {
+    font-size: 42px;
+    margin-bottom: 4em;} }
+
 .kaupa {
   text-align: center;
-  font-size: 1em;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  width: 4em;
-  padding-left: 5px;
-  padding-right: 5px;
+  font-size: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   border: solid 1px #666;
   border-radius: 4px;
   background-color: rgb(84,84,84);
@@ -193,7 +208,13 @@ main {
   margin-top: 10em;
   text-align: center;
   margin-bottom: 10em;
+  flex-wrap: wrap;
 }
+
+@media (max-width: 400px) {
+  .comments {
+    margin-top: 3em;}}
+
 
 .comments_image{
   border-radius: 50%;
@@ -201,9 +222,34 @@ main {
   margin:0 auto;
 }
 
+@media (max-width: 599px) {
+  .comments_image {
+    max-width: 13em; } }
+
 .profile1{
   max-width: 320px;
 }
+
+@media (max-width: 599px) {
+  .profile3 {
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;} }
+
+@media (max-width: 400px) {
+  .profile1 {
+    margin-left: auto;
+    margin-right: auto;}}
+
+    @media (max-width: 400px) {
+      .profile2 {
+        margin-left: auto;
+        margin-right: auto;}}
+
+        @media (max-width: 400px) {
+          .profile3 {
+            margin-left: auto;
+            margin-right: auto;}}
 
 
 .comments_header{
@@ -213,6 +259,10 @@ main {
   font-style: italic;
 }
 
+@media (max-width: 599px) {
+  .comments_header {
+    max-width: 13em; } }
+
 .comments_name{
   font-weight: bold;
 }
@@ -220,29 +270,30 @@ main {
 .back2{
   font-family: 'Roboto Slab', serif;
   text-align: center;
+  margin-bottom: 2em;
 }
 
 .back_message{
   font-size: 1.5em;
+  margin-bottom: 2em;
 }
 
+
  .kaupa2{
-  text-align: center;
-  font-size: 2em;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  width: 6em;
-  padding-left: 5px;
-  padding-right: 5px;
-  border: solid 1px #666;
-  border-radius: 4px;
-  background-color: rgb(84,84,84);
-  color: white;
-  height: 2em;
-  font-family: 'Open Sans', sans-serif;
-  text-decoration: none;
-  cursor: pointer;
-  margin-top: 1em;
+   text-align: center;
+   font-size: 32px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 70px;
+   padding-right: 70px;
+   border: solid 1px #666;
+   border-radius: 4px;
+   background-color: rgb(84,84,84);
+   color: white;
+   height: 2em;
+   font-family: 'Open Sans', sans-serif;
+   text-decoration: none;
+   cursor: pointer;
 }
 
 
@@ -264,7 +315,7 @@ main {
     font-size: 1.6em;
  }
 
- @media (max-width: 400px) {
+ @media (max-width: 399px) {
    .heading--two {
      margin-top: 2em; } }
 
@@ -297,7 +348,7 @@ main {
         float: right;
          }}
 
-    @media (max-width: 400px) {
+    @media (max-width: 399px) {
         .text__b {
           margin-left: 0.5em;
           margin-right:0.5em;
@@ -387,7 +438,7 @@ main {
   flex-direction: column-reverse;
    }
 
-  @media (min-width: 800px) {
+  @media (min-width: 799px) {
     .card {
       display: flex;
       flex-direction: row-reverse;} }
@@ -399,6 +450,7 @@ main {
     font-size: 1.5rem;
     word-break: break-word; }
 
+
   .card__content {
     display: flex;
     flex-direction: column;
@@ -408,23 +460,29 @@ main {
     margin-bottom: 15px;
   }
 
-    @media (min-width: 800px) {
+    @media (min-width: 799px) {
       .card__content {
         align-items: flex-start; } }
+
 
   .card__text {
     margin-bottom: 30px; }
 
   .card__img {
     width: 100%;
-    min-width: 200px;
     max-width: 600px; }
 
-    @media (min-width: 800px) {
+    @media (min-width: 799px) {
     .card__img {
     height: 100%;
     min-width: 400px;
     object-fit: cover; }
+   }
+
+   @media (max-width: 599px){
+     .card__img {
+       min-width: 100%;
+     }
    }
 
     .card__mid {
@@ -432,6 +490,13 @@ main {
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
+    }
+
+    @media (max-width: 599px){
+      .card__mid {
+        display: block;
+        margin-right: auto;
+      }
     }
 
     .check {

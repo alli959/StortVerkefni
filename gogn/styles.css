@@ -362,8 +362,6 @@ main {
           margin-right:0.5em;
           float: none; } }
 
-
-
   .author {
     margin-top: 2em;
     font-style: normal;
@@ -399,9 +397,6 @@ main {
        margin-bottom: 2.5rem;
      }
 
-
-
-
      .typeofpayment nafn{
        width: 300px;
      }
@@ -431,8 +426,6 @@ main {
     margin: 0 auto;
   }
 
-
-
   .footer{
     display: flex;
     justify-content: space-between;
@@ -447,9 +440,6 @@ main {
   .greidsla{
     display: inline-block;
     justify-content: space-between;
-
-
-
     }
 
 
@@ -541,8 +531,6 @@ main {
     display: inline-block;
     width: 24px;
         }
-
-
 
     label{
       display: block;

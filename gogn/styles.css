@@ -32,6 +32,8 @@ main {
   margin: 0 auto;
   overflow-x: hidden; }
 
+
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -200,10 +202,9 @@ main {
 
 
 .buying {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
   max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
       }
 
        input[name=nafn] {
@@ -239,6 +240,12 @@ main {
     max-width: 440px;
     margin: 0 auto;
   }
+  .width2{
+    max-width: 965px;
+    margin: 0 auto;
+  }
+
+
 
   .footer{
     display: flex;
@@ -250,6 +257,15 @@ main {
     padding-bottom: 2rem;
     padding-top: 1rem;
   }
+
+  .greidsla{
+    display: inline-block;
+    justify-content: space-between;
+
+
+
+    }
+
 
   .footer2{
     max-width: 1200px;
